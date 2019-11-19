@@ -3,6 +3,8 @@
 # CSCI102 - Section C
 # Week 12 - Part A
 
+import sys
+
 def PrintOutput(string):
      print('OUTPUT', string)
 
@@ -30,5 +32,29 @@ def FindWordCount(a, string):
                count += 1
                
      PrintOutput(count)
+
+def ScoreFinder(players, scores, player_name):
+     players_string = ''
+     
+     for index in range(len(players)):
           
+          players_string += players[index]
+          players_string += ' '
+     players_string = players_string.lower()
+     players_list = players_string.split()
           
+     for index in range(len(players_list)):
+
+          if players_list[index] == player_name:
+               i = index
+               score = players[i] + ' got a score of ' + str(scores[i])
+               break
+          else:
+               score = 'player not found'
+
+     PrintOutput(score)
+               
+
+     
+
+     
