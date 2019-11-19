@@ -9,7 +9,7 @@ def PrintOutput(string):
 def LoadFile(file_name):
     with open(file_name, 'r') as read_file:
         lines = read_file.readlines()
-    print(lines)
+    PrintOuput(lines)
 
 def UpdateString(string_one, string_two, integer):
      list_one = list(string_one)
@@ -19,8 +19,16 @@ def UpdateString(string_one, string_two, integer):
           if index == integer:
                list_one[index] = string_two
      
-     print(''.join(list_one))
+     PrintOutput(''.join(list_one))
 
-
+def FindWordCount(a, string):
+     count = 0
      
+     for index in range(len(a)):
+          
+          if a[index] == string:
+               count += 1
                
+     PrintOutput(count)
+          
+          
