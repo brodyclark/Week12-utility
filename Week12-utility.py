@@ -1,9 +1,6 @@
-# METHOD USED
 # Brody Clark
 # CSCI102 - Section C
 # Week 12 - Part A
-
-import sys
 
 def PrintOutput(string):
      print('OUTPUT', string)
@@ -80,9 +77,3 @@ def NotIn(list_one, list_two):
      notin_list = list(list_one - list_two)
 
      PrintOutput(notin_list)
-
-               
-
-     
-
-     
