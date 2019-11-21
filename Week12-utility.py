@@ -49,10 +49,24 @@ def ScoreFinder(players, scores, player_name):
                i = index
                score = players[i] + ' got a score of ' + str(scores[i])
                break
+          
           else:
                score = 'player not found'
 
      PrintOutput(score)
+
+def Union(list_one, list_two):
+     new_list = []
+     
+     set1 = set(list_one)
+     set2 = set(list_two)
+
+     new_list = list(set1 | set2)
+
+     PrintOutput(new_list)
+
+
+
                
 
      
