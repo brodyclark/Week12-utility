@@ -65,7 +65,13 @@ def Union(list_one, list_two):
 
      PrintOutput(new_list)
 
+def Intersection(list_one, list_two):
+     set1 = set(list_one)
+     set2 = set(list_two)
 
+     intersection_list = list(set1 & set2)
+
+     PrintOutput(intersection_list)
 
                
 
