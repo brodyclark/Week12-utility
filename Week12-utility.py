@@ -73,6 +73,14 @@ def Intersection(list_one, list_two):
 
      PrintOutput(intersection_list)
 
+def NotIn(list_one, list_two):
+     set1 = set(list_one)
+     set2 = set(list_two)
+
+     notin_list = list(list_one - list_two)
+
+     PrintOutput(notin_list)
+
                
 
      
