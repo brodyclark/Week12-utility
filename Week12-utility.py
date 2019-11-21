@@ -8,6 +8,7 @@ def PrintOutput(string):
 def LoadFile(file_name):
     with open(file_name, 'r') as read_file:
         lines = read_file.readlines()
+        
     PrintOuput(lines)
 
 def UpdateString(string_one, string_two, integer):
