@@ -1,3 +1,4 @@
+# https://github.com/brodyclark/Week12-utility/blob/master/Week12-utility.py
 # Brody Clark
 # CSCI102 - Section C
 # Week 12 - Part A
@@ -33,6 +34,7 @@ def FindWordCount(a, string):
 
 def ScoreFinder(players, scores, player_name):
      players_string = ''
+     player_name = player_name.lower()
      
      for index in range(len(players)):
           
